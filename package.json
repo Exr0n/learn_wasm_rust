@@ -1,0 +1,22 @@
+{
+    "name": "learn_wasm_rust",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Exr0n/learn_wasm_rust.git"
+    },
+    "author": "Exr0n",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Exr0n/learn_wasm_rust/issues"
+    },
+    "homepage": "https://github.com/Exr0n/learn_wasm_rust#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
