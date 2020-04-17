@@ -7,6 +7,11 @@ const config = {
     path: __dirname
 };
 
+app.use((req, res, next) => {
+    console.log(req.url);
+    req.next();
+});
+
 app.get('/', (_, res) => {
     res.sendFile(config.path + '/resources/index.html');
 });
