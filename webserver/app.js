@@ -1,5 +1,6 @@
 'use strict';
-const app = require('express')();
+const express = require('express');
+const app = express();
 
 const config = {
     port: 3000,
@@ -14,5 +15,7 @@ app.get('/wasm_glue.js', (_, res) => {
     res.sendFile(config.path + '/wasm_glue.js');
 });
 
-app.listen(config.port, () => console.log(`Listening on ${config.port} at ${Date()}`));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
+app.listen(config.port, () => console.log(`Listening on ${config.port} at ${Date()} in ${__dirname}`));
 
