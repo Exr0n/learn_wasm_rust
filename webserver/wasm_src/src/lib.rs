@@ -1,0 +1,12 @@
+// from https://rustwasm.github.io/docs/book/game-of-life/hello-world.html
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+extern {
+    fn alert(s: &str);
+}
+
+#[wasm_bindgen]
+pub fn greet() {
+    alert("Hello, wasm-game-of-life!");
+}

@@ -1,0 +1,1 @@
+/Users/lamnguyen/Desktop/projects/learn_wasm_rust/webserver/wasm_src/target/wasm32-unknown-unknown/release/wasm_src.wasm: /Users/lamnguyen/Desktop/projects/learn_wasm_rust/webserver/wasm_src/src/lib.rs

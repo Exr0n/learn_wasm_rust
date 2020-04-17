@@ -8,14 +8,14 @@ const config = {
 };
 
 app.get('/', (_, res) => {
-    res.sendFile(config.path + '/index.html');
+    res.sendFile(config.path + '/resources/index.html');
 });
 
-app.get('/wasm_glue.js', (_, res) => {
-    res.sendFile(config.path + '/wasm_glue.js');
+app.get('/index.js', (_, res) => {
+    res.sendFile(config.path + '/resources/index.js');
 });
 
-app.use('/node_modules', express.static(__dirname + '/node_modules'));
+app.use('/wasm', express.static(__dirname + '/wasm'));
 
-app.listen(config.port, () => console.log(`Listening on ${config.port} at ${Date()} in ${__dirname}`));
+app.listen(config.port, () => console.log(`Listening on ${config.port} at ${Date()}`));
 
